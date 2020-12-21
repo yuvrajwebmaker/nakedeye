@@ -4,27 +4,26 @@
 	box-sizing: border-box;
 	font-family: 'Josefin Sans', sans-serif;
 }
-.loader {
-    position: fixed;
-    z-index: 9941941948894894984984984984798489741984984987498894894949874984894;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.loader.hidden {
-    animation: fadeOut 5s;
-    animation-fill-mode: backwards;
+
+.disppear{
+  animation: vanish 1s forwards;
 }
-@keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 header{
 	width: 100%;

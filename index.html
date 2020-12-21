@@ -9,6 +9,9 @@
 
 </head>
 <body>
+	<div class="loader">
+      <img src="img/load.gif" alt="">
+    </div>
 <header>
 	<nav>
 		<div class="logo"> <h1 class="animate__heartBeat">naked eye gaming</h1></div>
@@ -29,5 +32,14 @@
 			</section>
 		</main>
 </header>
+<script type="text/javascript">
+	var loader = document.querySelector(".loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
+</script>
 </body>
 </html>
